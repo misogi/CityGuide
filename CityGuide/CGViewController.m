@@ -7,6 +7,8 @@
 //
 
 #import "CGViewController.h"
+#import "CGAppDelegate.h"
+#import "City.h"
 
 @interface CGViewController ()
 
@@ -18,6 +20,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
+    cities = delegate.cities;
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,12 +37,13 @@
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    cell.textLabel.text = @"Testing";
+    City *thisCity = [cities objectAtIndex:indexPath.row];
+    cell.textLabel.text = thisCity.cityName;
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [cities count];
 }
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

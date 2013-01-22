@@ -19,6 +19,10 @@
 		23A90DBA16AE741A001B506E /* CGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A90DB916AE741A001B506E /* CGViewController.m */; };
 		23A90DBD16AE741A001B506E /* CGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A90DBB16AE741A001B506E /* CGViewController.xib */; };
 		23D36F1116AE7D1B002F2BC1 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D36F1016AE7D1B002F2BC1 /* City.m */; };
+		23D36F1416AE8E9E002F2BC1 /* SanFrancisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D36F1316AE8E9E002F2BC1 /* SanFrancisco.jpg */; };
+		23D36F1616AE8EA9002F2BC1 /* Sydney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D36F1516AE8EA9002F2BC1 /* Sydney.jpg */; };
+		23D36F1816AE8EAF002F2BC1 /* London.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D36F1716AE8EAF002F2BC1 /* London.jpg */; };
+		23D36F1A16AE8EB4002F2BC1 /* Madrid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D36F1916AE8EB4002F2BC1 /* Madrid.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		23A90DBC16AE741A001B506E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CGViewController.xib; sourceTree = "<group>"; };
 		23D36F0F16AE7D1B002F2BC1 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
 		23D36F1016AE7D1B002F2BC1 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		23D36F1316AE8E9E002F2BC1 /* SanFrancisco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SanFrancisco.jpg; sourceTree = "<group>"; };
+		23D36F1516AE8EA9002F2BC1 /* Sydney.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sydney.jpg; sourceTree = "<group>"; };
+		23D36F1716AE8EAF002F2BC1 /* London.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = London.jpg; sourceTree = "<group>"; };
+		23D36F1916AE8EB4002F2BC1 /* Madrid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Madrid.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 		23A90DA716AE741A001B506E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23D36F1916AE8EB4002F2BC1 /* Madrid.jpg */,
+				23D36F1716AE8EAF002F2BC1 /* London.jpg */,
+				23D36F1516AE8EA9002F2BC1 /* Sydney.jpg */,
+				23D36F1316AE8E9E002F2BC1 /* SanFrancisco.jpg */,
 				23A90DA816AE741A001B506E /* CityGuide-Info.plist */,
 				23A90DA916AE741A001B506E /* InfoPlist.strings */,
 				23A90DAC16AE741A001B506E /* main.m */,
@@ -169,6 +181,10 @@
 				23A90DB516AE741A001B506E /* Default@2x.png in Resources */,
 				23A90DB716AE741A001B506E /* Default-568h@2x.png in Resources */,
 				23A90DBD16AE741A001B506E /* CGViewController.xib in Resources */,
+				23D36F1416AE8E9E002F2BC1 /* SanFrancisco.jpg in Resources */,
+				23D36F1616AE8EA9002F2BC1 /* Sydney.jpg in Resources */,
+				23D36F1816AE8EAF002F2BC1 /* London.jpg in Resources */,
+				23D36F1A16AE8EB4002F2BC1 /* Madrid.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
