@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) CGViewController *viewController;
 
+@property (strong, nonatomic) NSMutableArray *cities;
+
 @end

@@ -9,6 +9,7 @@
 #import "CGAppDelegate.h"
 
 #import "CGViewController.h"
+#import "City.h"
 
 @implementation CGAppDelegate
 

@@ -18,6 +18,7 @@
 		23A90DB716AE741A001B506E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A90DB616AE741A001B506E /* Default-568h@2x.png */; };
 		23A90DBA16AE741A001B506E /* CGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A90DB916AE741A001B506E /* CGViewController.m */; };
 		23A90DBD16AE741A001B506E /* CGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A90DBB16AE741A001B506E /* CGViewController.xib */; };
+		23D36F1116AE7D1B002F2BC1 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D36F1016AE7D1B002F2BC1 /* City.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		23A90DB816AE741A001B506E /* CGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGViewController.h; sourceTree = "<group>"; };
 		23A90DB916AE741A001B506E /* CGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGViewController.m; sourceTree = "<group>"; };
 		23A90DBC16AE741A001B506E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CGViewController.xib; sourceTree = "<group>"; };
+		23D36F0F16AE7D1B002F2BC1 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		23D36F1016AE7D1B002F2BC1 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				23A90DB916AE741A001B506E /* CGViewController.m */,
 				23A90DBB16AE741A001B506E /* CGViewController.xib */,
 				23A90DA716AE741A001B506E /* Supporting Files */,
+				23D36F0F16AE7D1B002F2BC1 /* City.h */,
+				23D36F1016AE7D1B002F2BC1 /* City.m */,
 			);
 			path = CityGuide;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				23A90DAD16AE741A001B506E /* main.m in Sources */,
 				23A90DB116AE741A001B506E /* CGAppDelegate.m in Sources */,
 				23A90DBA16AE741A001B506E /* CGViewController.m in Sources */,
+				23D36F1116AE7D1B002F2BC1 /* City.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +299,7 @@
 				23A90DC216AE741A001B506E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
