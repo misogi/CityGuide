@@ -17,6 +17,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    City *london = [[City alloc] init];
+    london.cityName = @"London";
+    london.cityDescription = @"The capital of the United Kingdom and England.";
+    london.cityPicture = [UIImage imageNamed:@"London.jpg"];
+    
     self.viewController = [[CGViewController alloc] initWithNibName:@"CGViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
