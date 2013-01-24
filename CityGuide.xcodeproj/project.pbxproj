@@ -18,6 +18,8 @@
 		23A90DB716AE741A001B506E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A90DB616AE741A001B506E /* Default-568h@2x.png */; };
 		23A90DBA16AE741A001B506E /* CGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A90DB916AE741A001B506E /* CGViewController.m */; };
 		23A90DBD16AE741A001B506E /* CGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A90DBB16AE741A001B506E /* CGViewController.xib */; };
+		23D2B77916B0FF390003EB3A /* CityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D2B77716B0FF390003EB3A /* CityController.m */; };
+		23D2B77A16B0FF390003EB3A /* CityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D2B77816B0FF390003EB3A /* CityController.xib */; };
 		23D36F1116AE7D1B002F2BC1 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D36F1016AE7D1B002F2BC1 /* City.m */; };
 		23D36F1416AE8E9E002F2BC1 /* SanFrancisco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D36F1316AE8E9E002F2BC1 /* SanFrancisco.jpg */; };
 		23D36F1616AE8EA9002F2BC1 /* Sydney.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D36F1516AE8EA9002F2BC1 /* Sydney.jpg */; };
@@ -42,6 +44,9 @@
 		23A90DB816AE741A001B506E /* CGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGViewController.h; sourceTree = "<group>"; };
 		23A90DB916AE741A001B506E /* CGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGViewController.m; sourceTree = "<group>"; };
 		23A90DBC16AE741A001B506E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CGViewController.xib; sourceTree = "<group>"; };
+		23D2B77616B0FF390003EB3A /* CityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityController.h; sourceTree = "<group>"; };
+		23D2B77716B0FF390003EB3A /* CityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityController.m; sourceTree = "<group>"; };
+		23D2B77816B0FF390003EB3A /* CityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityController.xib; sourceTree = "<group>"; };
 		23D36F0F16AE7D1B002F2BC1 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
 		23D36F1016AE7D1B002F2BC1 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		23D36F1316AE8E9E002F2BC1 /* SanFrancisco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SanFrancisco.jpg; sourceTree = "<group>"; };
@@ -102,6 +107,9 @@
 				23A90DA716AE741A001B506E /* Supporting Files */,
 				23D36F0F16AE7D1B002F2BC1 /* City.h */,
 				23D36F1016AE7D1B002F2BC1 /* City.m */,
+				23D2B77616B0FF390003EB3A /* CityController.h */,
+				23D2B77716B0FF390003EB3A /* CityController.m */,
+				23D2B77816B0FF390003EB3A /* CityController.xib */,
 			);
 			path = CityGuide;
 			sourceTree = "<group>";
@@ -185,6 +193,7 @@
 				23D36F1616AE8EA9002F2BC1 /* Sydney.jpg in Resources */,
 				23D36F1816AE8EAF002F2BC1 /* London.jpg in Resources */,
 				23D36F1A16AE8EB4002F2BC1 /* Madrid.jpg in Resources */,
+				23D2B77A16B0FF390003EB3A /* CityController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +208,7 @@
 				23A90DB116AE741A001B506E /* CGAppDelegate.m in Sources */,
 				23A90DBA16AE741A001B506E /* CGViewController.m in Sources */,
 				23D36F1116AE7D1B002F2BC1 /* City.m in Sources */,
+				23D2B77916B0FF390003EB3A /* CityController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
