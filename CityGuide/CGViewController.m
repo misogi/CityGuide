@@ -34,9 +34,17 @@
 }
 
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
-    [super setEditing:editing animated:animated];
-    [self.tableView setEditing:editing animated:animated];
-    [self.tableView reloadData];
+    if (editing != self.editing) {
+        [super setEditing:editing animated:animated];
+        [self.tableView setEditing:editing animated:animated];
+        
+        NSArray *indexes = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:cities.count inSection:0]];
+        if (editing == YES) {
+            [self.tableView insertRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+        } else {
+            [self.tableView deleteRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+        }
+    }
 }
 
 #pragma mark UITableViewDataSource Methods
