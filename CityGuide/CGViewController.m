@@ -46,7 +46,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section {
-    return [cities count];
+    NSInteger count = cities.count;
+    if(self.editing) {
+        count = count + 1;
+    }
+    return count;
 }
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
