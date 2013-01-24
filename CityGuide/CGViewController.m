@@ -9,6 +9,7 @@
 #import "CGViewController.h"
 #import "CGAppDelegate.h"
 #import "City.h"
+#import "CityController.h"
 
 @interface CGViewController ()
 
@@ -48,6 +49,9 @@
 }
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
+    CityController *city = [[CityController alloc] init];
+    [delegate.navController pushViewController:city animated:YES];
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
