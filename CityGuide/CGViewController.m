@@ -33,6 +33,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:animated];
+    [self.tableView reloadData];
+}
+
 #pragma mark UITableViewDataSource Methods
 
 - (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -40,8 +46,16 @@
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    City *thisCity = [cities objectAtIndex:indexPath.row];
-    cell.textLabel.text = thisCity.cityName;
+    
+    if (indexPath.row < cities.count){
+        City *thisCity = [cities objectAtIndex:indexPath.row];
+        cell.textLabel.text = thisCity.cityName;
+    } else {
+        cell.textLabel.text = @"Add new City...";
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+        cell.editingAccessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
     return cell;
 }
 
@@ -61,5 +75,13 @@
 }
 
 #pragma mark UITableViewDelegate Methods
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tv editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row < cities.count) {
+        return UITableViewCellEditingStyleDelete;
+    } else {
+        return UITableViewCellEditingStyleInsert;
+    }
+}
 
 @end
