@@ -36,8 +36,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    CGAppDelegate *delegate =
-    (CGAppDelegate *) [[UIApplication sharedApplication] delegate];
+    CGAppDelegate *delegate = (CGAppDelegate *) [[UIApplication sharedApplication] delegate];
     City *thisCity = [delegate.cities objectAtIndex:index.row];
     
     self.title = thisCity.cityName;
