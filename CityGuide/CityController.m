@@ -7,6 +7,8 @@
 //
 
 #import "CityController.h"
+#import "CGAppDelegate.h"
+#import "City.h"
 
 @interface CityController ()
 
@@ -23,10 +25,25 @@
     return self;
 }
 
+- (id)initWithIndexPath:(NSIndexPath *)indexPath {
+    if ((self = [super init])) {
+        index  = indexPath;
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    CGAppDelegate *delegate =
+    (CGAppDelegate *) [[UIApplication sharedApplication] delegate];
+    City *thisCity = [delegate.cities objectAtIndex:index.row];
+    
+    self.title = thisCity.cityName;
+    descriptionView.text = thisCity.cityDescription;
+    descriptionView.editable = NO;
+    pictureView.image = thisCity.cityPicture;
 }
 
 - (void)didReceiveMemoryWarning
