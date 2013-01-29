@@ -39,11 +39,25 @@
         [super setEditing:editing animated:animated];
         [self.tableView setEditing:editing animated:animated];
         
-        NSArray *indexes = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:cities.count inSection:0]];
+        NSMutableArray *indices = [[NSMutableArray alloc] init];
+        for (int i=0; i < cities.count; i++) {
+            [indices addObject:[NSIndexPath indexPathForRow:i inSection:0]];
+        }
+        
+        NSArray *lastIndex = [NSArray arrayWithObject:[NSIndexPath indexPathForRow:cities.count inSection:0]];
+        
         if (editing == YES) {
-            [self.tableView insertRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+            for (int i=0; i < cities.count; i++) {
+                UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[indices objectAtIndex:i]];
+                [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            }
+            [self.tableView insertRowsAtIndexPaths:lastIndex withRowAnimation:UITableViewRowAnimationLeft];
         } else {
-            [self.tableView deleteRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationLeft];
+            for (int i=0; i < cities.count; i++) {
+                UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[indices objectAtIndex:i]];
+                [cell setSelectionStyle:UITableViewCellSelectionStyleBlue];
+            }
+            [self.tableView deleteRowsAtIndexPaths:lastIndex withRowAnimation:UITableViewRowAnimationLeft];
         }
     }
 }
