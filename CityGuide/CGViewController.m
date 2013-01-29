@@ -10,6 +10,7 @@
 #import "CGAppDelegate.h"
 #import "City.h"
 #import "CityController.h"
+#import "AddCityController.h"
 
 @interface CGViewController ()
 
@@ -77,8 +78,17 @@
 
 - (void)tableView:(UITableView *)tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
-    CityController *city = [[CityController alloc] initWithIndexPath:indexPath];
-    [delegate.navController pushViewController:city animated:YES];
+    
+    if (indexPath.row < cities.count && !self.editing) {
+        CityController *city = [[CityController alloc] initWithIndexPath:indexPath];
+        [delegate.navController pushViewController:city animated:YES];
+    }
+    
+    if (indexPath.row == cities.count && self.editing) {
+        AddCityController *addCity = [[AddCityController alloc] init];
+        [delegate.navController pushViewController:addCity animated:YES];
+    }
+    
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
