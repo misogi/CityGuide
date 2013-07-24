@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230DC63B179FC16E00003024 /* QuestionMark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 230DC63A179FC16E00003024 /* QuestionMark.jpg */; };
 		231756A716B25B66009FE2B2 /* AddCityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 231756A516B25B66009FE2B2 /* AddCityController.m */; };
 		231756A816B25B66009FE2B2 /* AddCityController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231756A616B25B66009FE2B2 /* AddCityController.xib */; };
 		23A90DA116AE741A001B506E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A90DA016AE741A001B506E /* UIKit.framework */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230DC63A179FC16E00003024 /* QuestionMark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QuestionMark.jpg; sourceTree = "<group>"; };
 		231756A416B25B66009FE2B2 /* AddCityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCityController.h; sourceTree = "<group>"; };
 		231756A516B25B66009FE2B2 /* AddCityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCityController.m; sourceTree = "<group>"; };
 		231756A616B25B66009FE2B2 /* AddCityController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCityController.xib; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		23A90DA716AE741A001B506E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				230DC63A179FC16E00003024 /* QuestionMark.jpg */,
 				23D36F1916AE8EB4002F2BC1 /* Madrid.jpg */,
 				23D36F1716AE8EAF002F2BC1 /* London.jpg */,
 				23D36F1516AE8EA9002F2BC1 /* Sydney.jpg */,
@@ -203,6 +206,7 @@
 				23D36F1A16AE8EB4002F2BC1 /* Madrid.jpg in Resources */,
 				23D2B77A16B0FF390003EB3A /* CityController.xib in Resources */,
 				231756A816B25B66009FE2B2 /* AddCityController.xib in Resources */,
+				230DC63B179FC16E00003024 /* QuestionMark.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

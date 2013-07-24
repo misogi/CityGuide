@@ -35,14 +35,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     CGAppDelegate *delegate = (CGAppDelegate *) [[UIApplication sharedApplication] delegate];
     City *thisCity = [delegate.cities objectAtIndex:index.row];
     
     self.title = thisCity.cityName;
     descriptionView.text = thisCity.cityDescription;
     descriptionView.editable = NO;
-    pictureView.image = thisCity.cityPicture;
+
+    UIImage *image = thisCity.cityPicture;
+    if(image == nil)
+    {
+        image = [UIImage imageNamed:@"QuestionMark.jpg"];
+    }
+    pictureView.image = image;
 }
 
 - (void)didReceiveMemoryWarning
