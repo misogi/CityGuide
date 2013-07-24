@@ -28,6 +28,12 @@
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)addCity:(id)sender
+{
+    AddCityController *addCity = [[AddCityController alloc] init];
+    [self presentViewController:addCity animated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -70,9 +76,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     
+    NSLog(@"indexpath.row = %d, cities.count = %d", indexPath.row, cities.count);
     if (indexPath.row < cities.count){
         City *thisCity = [cities objectAtIndex:indexPath.row];
         cell.textLabel.text = thisCity.cityName;
+        cell.textLabel.textColor = [UIColor blackColor];
+        cell.editingAccessoryType = UITableViewCellAccessoryNone;
+        if (self.editing) {
+            [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        }
     } else {
         cell.textLabel.text = @"Add new City...";
         cell.textLabel.textColor = [UIColor lightGrayColor];

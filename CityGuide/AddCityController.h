@@ -13,5 +13,6 @@
     IBOutlet UITableViewCell *nameCell;
     IBOutlet UITableViewCell *descriptionCell;
 }
+- (void)saveCity:(id)sender;
 
 @end
