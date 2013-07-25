@@ -15,8 +15,8 @@
 
 - (IBAction)showInfo:(id)sender;
 
-//- (void)batteryChanged:(NSNotification *)note;
-//- (NSString *)batteryLevel;
-//- (NSString *)batteryState:(UIDeviceBatteryState)batteryState;
+- (void)batteryChanged:(NSNotification *)note;
+- (NSString *)batteryLevel;
+- (NSString *)batteryState:(UIDeviceBatteryState)batteryState;
 
 @end
