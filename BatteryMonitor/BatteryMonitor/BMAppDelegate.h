@@ -16,4 +16,6 @@
 
 @property (strong, nonatomic) BMMainViewController *mainViewController;
 
+@property (nonatomic) BOOL monitorBattery;
+
 @end

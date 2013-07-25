@@ -7,6 +7,7 @@
 //
 
 #import "BMFlipsideViewController.h"
+#import "BMAppDelegate.h"
 
 @interface BMFlipsideViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Preferences";
+    BMAppDelegate *appDelegate = (BMAppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.toggleSwitch.on = appDelegate.monitorBattery;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -30,6 +34,8 @@
 
 - (IBAction)done:(id)sender
 {
+    BMAppDelegate *appDelegate = (BMAppDelegate *)[[UIApplication sharedApplication] delegate];
+    appDelegate.monitorBattery = self.toggleSwitch.on;
     [self.delegate flipsideViewControllerDidFinish:self];
 }
 

@@ -19,6 +19,7 @@
     self.mainViewController = [[BMMainViewController alloc] initWithNibName:@"BMMainViewController" bundle:nil];
     self.window.rootViewController = self.mainViewController;
     [self.window makeKeyAndVisible];
+    self.monitorBattery = NO;
     return YES;
 }
 

@@ -17,6 +17,7 @@
 @interface BMFlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <BMFlipsideViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UISwitch *toggleSwitch;
 
 - (IBAction)done:(id)sender;
 
