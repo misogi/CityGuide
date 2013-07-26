@@ -13,6 +13,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 - (void)addCity:(id)sender;
 
 @end

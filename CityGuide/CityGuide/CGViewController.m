@@ -25,6 +25,7 @@
     self.title = @"City Guide";
     CGAppDelegate *delegate = (CGAppDelegate *)[[UIApplication sharedApplication] delegate];
     cities = delegate.cities;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addCity:)];
 }
 
 - (void)addCity:(id)sender
