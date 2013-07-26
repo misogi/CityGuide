@@ -23,8 +23,12 @@
     UIViewController *viewController2 = [[TBSecondViewController alloc] initWithNibName:@"TBSecondViewController" bundle:nil];
     UIViewController *viewController3;
     viewController3 = [[TBThirdViewController alloc] initWithNibName:@"TBThirdViewController" bundle:nil];
+
+    self.navController = [[UINavigationController alloc] initWithRootViewController:viewController1];
+    self.navController.navigationBar.barStyle = UIBarStyleBlack;
+
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
+    self.tabBarController.viewControllers = @[self.navController, viewController2, viewController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
