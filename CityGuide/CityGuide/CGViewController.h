@@ -11,6 +11,7 @@
 @interface CGViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     NSMutableArray *cities;
 }
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (void)addCity:(id)sender;
 
