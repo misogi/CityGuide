@@ -8,6 +8,9 @@
 
 #import "TBFirstViewController.h"
 
+#import "TBAppDelegate.h"
+#import "SimpleView.h"
+
 @interface TBFirstViewController ()
 
 @end
@@ -57,6 +60,11 @@
 
 - (void)tableView:tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    TBAppDelegate *delegate = (TBAppDelegate *)[[UIApplication sharedApplication] delegate];
+    UIViewController *controller = [[SimpleView alloc] initWithNibName:@"SimpleView" bundle:nil];
+    [delegate.navController pushViewController:controller animated:YES];
+
+
     [tv deselectRowAtIndexPath:indexPath animated:YES];
 }
 
