@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2359CC2817A25C750097353A /* SimpleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2359CC2617A25C750097353A /* SimpleView.m */; };
+		2359CC2917A25C750097353A /* SimpleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2359CC2717A25C750097353A /* SimpleView.xib */; };
 		23D869AC17A24EA300EFC840 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D869AB17A24EA300EFC840 /* UIKit.framework */; };
 		23D869AE17A24EA300EFC840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D869AD17A24EA300EFC840 /* Foundation.framework */; };
 		23D869B017A24EA300EFC840 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D869AF17A24EA300EFC840 /* CoreGraphics.framework */; };
@@ -29,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2359CC2517A25C750097353A /* SimpleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleView.h; sourceTree = "<group>"; };
+		2359CC2617A25C750097353A /* SimpleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleView.m; sourceTree = "<group>"; };
+		2359CC2717A25C750097353A /* SimpleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleView.xib; sourceTree = "<group>"; };
 		23D869A817A24EA300EFC840 /* Tabified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabified.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D869AB17A24EA300EFC840 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		23D869AD17A24EA300EFC840 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,6 +106,9 @@
 		23D869B117A24EA300EFC840 /* Tabified */ = {
 			isa = PBXGroup;
 			children = (
+				2359CC2517A25C750097353A /* SimpleView.h */,
+				2359CC2617A25C750097353A /* SimpleView.m */,
+				2359CC2717A25C750097353A /* SimpleView.xib */,
 				23D869BA17A24EA300EFC840 /* TBAppDelegate.h */,
 				23D869BB17A24EA300EFC840 /* TBAppDelegate.m */,
 				23D869C317A24EA300EFC840 /* TBFirstViewController.h */,
@@ -198,6 +206,7 @@
 				23D869D317A24EA300EFC840 /* TBFirstViewController.xib in Resources */,
 				23D869D617A24EA300EFC840 /* TBSecondViewController.xib in Resources */,
 				23D869E017A24FA600EFC840 /* TBThirdViewController.xib in Resources */,
+				2359CC2917A25C750097353A /* SimpleView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +222,7 @@
 				23D869C517A24EA300EFC840 /* TBFirstViewController.m in Sources */,
 				23D869CC17A24EA300EFC840 /* TBSecondViewController.m in Sources */,
 				23D869DF17A24FA600EFC840 /* TBThirdViewController.m in Sources */,
+				2359CC2817A25C750097353A /* SimpleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +353,7 @@
 				23D869DB17A24EA300EFC840 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
