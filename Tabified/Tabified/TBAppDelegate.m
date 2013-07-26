@@ -21,7 +21,8 @@
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[TBFirstViewController alloc] initWithNibName:@"TBFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[TBSecondViewController alloc] initWithNibName:@"TBSecondViewController" bundle:nil];
-    UIViewController *viewController3 = [[TBThirdViewController alloc] initWithNibName:@"TBThirdViewController" bundle:nil];
+    UIViewController *viewController3;
+    viewController3 = [[TBThirdViewController alloc] initWithNibName:@"TBThirdViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
     self.window.rootViewController = self.tabBarController;

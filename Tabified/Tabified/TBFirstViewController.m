@@ -36,4 +36,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UITableViewDataSource Methods
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (nil == cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = @"Udon";
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tv numberOfRowsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+#pragma mark - UITableViewDelegate Methods
+
+- (void)tableView:tv didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tv deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 @end
